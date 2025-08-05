@@ -1,0 +1,6 @@
+This is another dummy text file.
+Sample entries:
+- Alpha
+- Beta
+- Gamma
+End of second file.
