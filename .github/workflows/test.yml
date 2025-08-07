@@ -1,0 +1,14 @@
+name: Echo Workflow
+
+on: [push]  # Jab bhi push hoga, ye workflow trigger hoga
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4  # Optional hai agar code use nahi kar rahe ho
+
+      - name: Echo Hello
+        run: echo "Hello from GitHub Actions!"
