@@ -1,0 +1,16 @@
+name: Manual Deployment with Input
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Target environment'
+        required: true
+        default: 'development'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show Selected Environment
+        run: echo "Deploying to ${{ github.event.inputs.environment }} environment"
